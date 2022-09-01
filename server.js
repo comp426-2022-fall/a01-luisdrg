@@ -29,10 +29,6 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
 
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
-process.on('uncaughtException', err => {
-  console.error('There was an uncaught error', err);
-  process.exit(1); // mandatory (as per the Node.js docs)
-});
 
 
 // Define a const `server` as an arrow function using http.createServer. 
