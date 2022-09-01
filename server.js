@@ -24,8 +24,6 @@ fs.readFile('./public/index.html', 'utf8', (err, data) => {
     return;
   }
   console.log(data);
-});
-
 
 // If there is an error, put it on the console error and return. 
 // Do not be nice about exiting.
@@ -50,6 +48,7 @@ server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
+});
 
 
 // That's it! You're all done!
