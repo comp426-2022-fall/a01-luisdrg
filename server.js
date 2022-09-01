@@ -1,12 +1,16 @@
 // Require http module
+const http = require('http');
 
 // Require fs module
+const fs = require('fs')
 
 // Require minimist module (make sure you install this one via npm).
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
+var argv = require('minimist')(process.argv.slice(2));
 
 // Define a const `port` using the argument from the command line. 
+
 // Make this const default to port 3000 if there is no argument given for `--port`.
 
 // Use the fs module to create an arrow function using `fs.readFile`.
